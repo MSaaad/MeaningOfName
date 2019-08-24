@@ -1,0 +1,133 @@
+.inputname {
+	margin-bottom: 140px;
+	color: rgb(211, 211, 211);
+}
+.name{
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 30px;
+	text-align: center;
+	margin-top: 180px;
+	color: #067370;
+}
+input {
+	border:2px solid #067370;
+	font-size:1.75em;
+	padding:.25em .5em .3125em;
+	color:rgba(255, 255, 255, 0.863);
+	border-radius:.25em;
+	background:transparent;
+	transition:all .100s;
+	font-family: sans-serif;
+}
+canvas {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	pointer-events:none;
+}
+input:focus::-moz-placeholder {
+	opacity:.5;
+}
+html,body {
+	height:100%;
+	overflow:hidden;
+}
+
+body {
+	box-shadow:inset 0 0 5em #000;
+	margin: 0;
+	padding: 0;
+}
+input {
+	position:absolute;
+	box-sizing:border-box;
+	bottom: 4em;
+	left:50%;
+	width:11em;
+	margin-left:-5.5em;
+	
+}
+.header{
+	font-family: sans-serif;
+	font-size: 30px;
+	margin-top: -30px;
+	text-align: center;
+	color: #067370;
+}
+.para{
+	font-family: sans-serif;
+	font-size: 20px;
+	padding: 30px;
+	text-align: center;
+	color: #067370;
+}
+h1 {
+  font-family:'Poiret One';
+  font-size: 600%;
+  padding-top: 100px;
+}
+
+
+p {
+	font-family:'Poiret One';
+	font-size: 220%;
+	font-weight: lighter;
+	padding-top: 14px;
+}
+
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:#212121;
+  background-size: 800% 800%;
+}
+
+@-webkit-keyframes colors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes colors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes colors {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+
+@import "lesshat";
+
+@text-end: #004f75;
+@text-start: #87d8ff;
+
+@keyframes blink {
+  0% { opacity: 0.0; }
+  50% { opacity: 1.0; }
+  100% { opacity: 0.0; }
+}
+
+@keyframes letter {
+  0% {
+    color: @text-start;
+    transform: scale(2.0, 2.0) translateX(7px);
+  }
+  100% {
+    color: @text-end;
+    transform: scale(1, 1) translateX(0px);
+  }
+}
+
+{
+  outline: none;
+  border: none;
+  padding: 0;
+}
