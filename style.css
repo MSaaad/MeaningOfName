@@ -61,10 +61,10 @@
 }
 
 .lowin.lowin-green {
-	--color-primary: #D0EF84;
-	--color-grey: rgba(208, 239, 132, .15);
-	--color-dark: rgba(208, 239, 132, 1);
-	--color-semidark: rgba(208, 239, 132, .6);
+	--color-primary: rgb(239, 237, 132);
+	--color-grey: rgba(239, 239, 132, .15);
+	--color-dark: rgb(185, 184, 97);
+	--color-semidark: rgba(239, 239, 132, .6);
 }
 
 .lowin.lowin-purple {
@@ -75,10 +75,10 @@
 }
 
 .lowin.lowin-blue {
-	--color-primary: rgb(3, 113, 172);
-	--color-grey: rgba(0, 129, 198, .05);
-	--color-dark: rgba(0, 129, 198, .7);
-	--color-semidark: rgba(0, 129, 198, .45);
+	--color-primary: rgb(0, 102, 161);
+	--color-grey: rgba(0, 102, 198, .05);
+	--color-dark: rgba(0, 152, 198, .7);
+	--color-semidark: rgba(1, 102, 156, 0.45);
 }
 
 .lowin a {
