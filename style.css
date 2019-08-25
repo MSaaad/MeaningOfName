@@ -75,10 +75,11 @@
 }
 
 .lowin.lowin-blue {
+
 	--color-primary: #008b8b;
-	--color-grey: #027575;
-	--color-dark: #004e4e;
-	--color-semidark: #005a5a;
+	--color-grey:  #00727288;
+	--color-dark: #005f5f;
+	--color-semidark:#027575 ;
 }
 
 .lowin a {
