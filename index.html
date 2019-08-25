@@ -1,25 +1,40 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
-    <title>Meaning Of Name</title>
-  </head>
-  <body>
-    <div id="background">
-      <div class='text-center'>
-        <h1 class='header'>Name Meaning Finder</h1>
-        <p class='para'>Here you can find the meaning of your name.. Sorry if I didn't remeber your name :)</p>
-        <input id ="inputname" class="inputname" type="text" placeholder="Enter Your name here.."/>
-        <p class="name" id="name"></p>
-      </div>
-    </div>
-    <script src="names.js"></script>
-  </body>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Login / Signup</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="lowin lowin-green">
+		<div class="lowin-brand">
+		</div>
+		<div class="lowin-wrapper">
+			<div class="lowin-box lowin-login">
+				<div class="lowin-box-inner">
+          <div class='text-center'>
+            <h1 class='header'>Name Meaning Finder</h1>
+            <p class='para'>Here you can find the meaning of your name.. Sorry if I didn't remeber your name :)</p>
+            <input id ="inputname" class="inputname" type="text" placeholder="Enter Your name here.."/>
+            <p class="name" id="name"></p>
+          </div>
+        </div>
+			</div>
+
+		<footer class="lowin-footer">
+			Design By <a href="www.github.com/MSaaad">@MSaaad</a>
+		</footer>
+	</div>
+
+	<script src="names.js"></script>
+	<script>
+		Auth.init({
+			login_url: '#login',
+			forgot_url: '#forgot'
+		});
+	</script>
+</body>
 </html>

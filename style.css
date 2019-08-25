@@ -1,139 +1,291 @@
-.inputname {
-	margin-bottom: 60px;
-	color: rgb(233, 232, 232);
-}
-.name{
-	font-family: sans-serif;
-	font-size: 20px;
-	padding: 30px;
-	text-align: center;
-	margin-top: 100px;
-	color: rgb(141, 141, 141);
-}
-input {
-	border:2px solid rgb(141, 141, 141);
-	font-size:1.75em;
-	padding:.25em .5em .3125em;
-	color:rgb(141, 141, 141);
-	border-radius:.25em;
-	background:transparent;
-	transition:all .100s;
-	font-family: sans-serif;
-}
-canvas {
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	pointer-events:none;
-}
-input:focus::-moz-placeholder {
-	opacity:.5;
-}
-html,body {
-	height:100%;
-	overflow:hidden;
-}
-
-body {
-	box-shadow:inset 0 0 5em #000;
-	margin: 0;
-	padding: 0;
-}
-input {
-	position:absolute;
-	box-sizing:border-box;
-	bottom: 4em;
-	left:50%;
-	width:11em;
-	margin-left:-5.5em;
-	
-}
 .header{
-	font-family: sans-serif;
-	font-size: 28px;
-	margin-top: -30px;
+	color: var(--color-semidark);
+	font-weight: 700;
+	margin-bottom: 20px;
 	text-align: center;
-	color: rgb(141, 141, 141);
+
 
 }
-.para{
-	font-family: sans-serif;
-	font-size: 20px;
-	padding: 20px;
+.inputname{
+	background-color: var(--color-grey);
+	color: var(--color-dark);
+	border: none;
+	border-radius: 3px;
+	padding: 15px 20px;
+	width: 100%;
+	outline: 0;
+	overflow: hidden;
+
+}
+.lowin {
+	/* variables */
+	--color-primary: #D0EF84;
+	--color-grey: rgba(68, 160, 179, .06);
+	--color-dark: rgba(68, 160, 179, .5);
+	--color-semidark: rgba(68, 160, 179, .5);
+
 	text-align: center;
-	color: rgb(141, 141, 141);
-}
-h1 {
-  font-family:'Poiret One';
-  font-size: 600%;
-  padding-top: 100px;
+	margin: 60px 0 0 0;
+	font-family: 'Segoe UI';
+	font-size: 14px;
 }
 
-
-p {
-	font-family:'Poiret One';
-	font-size: 220%;
-	font-weight: lighter;
-	padding-top: 14px;
+.lowin .lowin-wrapper {
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	-webkit-perspective: 1000px;
+	        perspective: 1000px;
+	position: relative;
+	height: 100%;
+	width: 360px;
+	margin: 0 auto;
 }
 
-
-#background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-size: 800% 800%;
-
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff)), color-stop(75%, rgba(255, 255, 255, 0.7)), to(#ffffff));
-  background: linear-gradient(to bottom, #172e31 0%, black 75%,#172e31 100%);
-  background-position: center;
-  background-repeat: no-repeat;
-
+.lowin.lowin-green {
+	--color-primary: #D0EF84;
+	--color-grey: rgba(208, 239, 132, .15);
+	--color-dark: rgba(208, 239, 132, 1);
+	--color-semidark: rgba(208, 239, 132, .6);
 }
 
-@-webkit-keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+.lowin.lowin-purple {
+	--color-primary: #6C567B;
+	--color-grey: rgba(108, 86, 123, .08);
+	--color-dark: rgba(108, 86, 123, .7);
+	--color-semidark: rgba(108, 86, 123, .45);
 }
 
-
-@import "lesshat";
-
-@text-end: #004f75;
-@text-start: #87d8ff;
-
-@keyframes blink {
-  0% { opacity: 0.0; }
-  50% { opacity: 1.0; }
-  100% { opacity: 0.0; }
+.lowin a {
+	color: var(--color-primary);
+	text-decoration: none;
+	border-bottom: 1px dashed var(--color-semidark);
+	margin-top: -3px;
+	padding-bottom: 2px;
 }
 
-@keyframes letter {
-  0% {
-    color: @text-start;
-    transform: scale(2.0, 2.0) translateX(7px);
-  }
-  100% {
-    color: @text-end;
-    transform: scale(1, 1) translateX(0px);
-  }
+.lowin * {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
-{
-  outline: none;
-  border: none;
-  padding: 0;
+.lowin .lowin-box {
+	width: 100%;
+	position: absolute;
+	left: 0;
+}
+
+.lowin .lowin-box-inner {
+	background-color: #fff;
+	-webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, .18);
+	        box-shadow: 0 7px 25px rgba(0, 0, 0, .18);
+	padding: 60px 25px 25px 25px;
+	text-align: left;
+	border-radius: 3px;
+}
+
+.lowin .lowin-box::after {
+	content: ' ';
+	-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+	        box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+	-webkit-transform: translate(0, -92.6%) scale(.88);
+	    -ms-transform: translate(0, -92.6%) scale(.88);
+	        transform: translate(0, -92.6%) scale(.88);
+	border-radius: 3px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: -1;
+}
+
+.lowin .lowin-box.lowin-flip {
+	-webkit-transform: rotate3d(0, 1, 0, -180deg);
+	        transform: rotate3d(0, 1, 0, -180deg);
+	display: none;
+	opacity: 0;
+}
+
+.lowin .lowin-box p {
+	color: var(--color-semidark);
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.lowin .lowin-box .lowin-group {
+	margin-bottom: 30px;
+}
+
+.lowin .lowin-box label {
+	margin-bottom: 5px;
+	display: inline-block;
+	width: 100%;
+	color: var(--color-semidark);
+	font-weight: 700;
+}
+
+.lowin .lowin-box label a {
+	float: right;
+}
+
+.lowin .lowin-box .lowin-input {
+	background-color: var(--color-grey);
+	color: var(--color-dark);
+	border: none;
+	border-radius: 3px;
+	padding: 15px 20px;
+	width: 100%;
+	outline: 0;
+	overflow: hidden;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.lowin .lowin-box .lowin-btn {
+	display: inline-block;
+	width: 100%;
+	border: none;
+	color: #fff;
+	padding: 15px;
+	border-radius: 3px;
+	background-color: var(--color-primary);
+	-webkit-box-shadow: 0 2px 7px var(--color-semidark);
+	        box-shadow: 0 2px 7px var(--color-semidark);
+	font-weight: 700;
+	outline: 0;
+	cursor: pointer;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+	text-align: center;
+}
+
+.lowin .lowin-box .lowin-btn:active {
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+.lowin .lowin-box .lowin-btn:hover {
+	opacity: .9;
+}
+
+.lowin .text-foot {
+	text-align: center;
+	padding: 10px;
+	font-weight: 700;
+	margin-top: 20px;
+	color: var(--color-semidark);
+}
+
+.lowin .lowin-footer {
+	text-align: center;
+	margin: 30px 0;
+	font-size: 12px;
+	color: var(--color-semidark);
+	font-weight: 700;
+}
+
+.lowin .login-back-link {
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	display: none;
+	opacity: 0;
+}
+
+/* animation */
+.lowin .lowin-box.lowin-animated {
+	-webkit-animation-name: LowinAnimated;
+	        animation-name: LowinAnimated;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.lowin .lowin-box.lowin-animatedback {
+	-webkit-animation-name: LowinAnimatedBack;
+	        animation-name: LowinAnimatedBack;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.lowin .lowin-box.lowin-animated-flip {
+	-webkit-animation-name: LowinAnimatedFlip;
+	        animation-name: LowinAnimatedFlip;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.lowin .lowin-box.lowin-animated-flipback {
+	-webkit-animation-name: LowinAnimatedFlipBack;
+	        animation-name: LowinAnimatedFlipBack;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.lowin .lowin-brand.lowin-animated {
+	-webkit-animation-name: LowinBrandAnimated;
+	        animation-name: LowinBrandAnimated;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+}
+
+.lowin .lowin-group.password-group {
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.lowin .lowin-group.password-group.lowin-animated {
+	-webkit-animation-name: LowinPasswordAnimated;
+	        animation-name: LowinPasswordAnimated;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
+}
+
+.lowin .lowin-group.password-group.lowin-animated-back {
+	-webkit-animation-name: LowinPasswordAnimatedBack;
+	        animation-name: LowinPasswordAnimatedBack;
+	-webkit-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-transform-origin: 0 0;
+	    -ms-transform-origin: 0 0;
+	        transform-origin: 0 0;
 }
