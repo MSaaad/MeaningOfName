@@ -75,7 +75,7 @@
 }
 
 .lowin.lowin-blue {
-	--color-primary: #0081C6;
+	--color-primary: rgb(3, 113, 172);
 	--color-grey: rgba(0, 129, 198, .05);
 	--color-dark: rgba(0, 129, 198, .7);
 	--color-semidark: rgba(0, 129, 198, .45);
