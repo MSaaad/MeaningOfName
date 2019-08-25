@@ -1,4 +1,4 @@
-.header{
+.header {
 	color: var(--color-semidark);
 	font-weight: 700;
 	margin-bottom: 60px;
@@ -6,7 +6,8 @@
 
 
 }
-.inputname{
+
+.inputname {
 	background-color: var(--color-grey);
 	color: var(--color-dark);
 	border: none;
@@ -21,9 +22,11 @@
 	font-family: 'Segoe UI';
 	text-align: center;
 }
-.name{
+
+.name {
 	margin-top: 80px;
 }
+
 .lowin {
 	/* variables */
 	--color-primary: #D0EF84;
@@ -42,7 +45,7 @@
 	-o-transition: all 1s;
 	transition: all 1s;
 	-webkit-perspective: 1000px;
-	        perspective: 1000px;
+	perspective: 1000px;
 	position: relative;
 	height: 100%;
 	width: 350px;
@@ -88,21 +91,21 @@
 
 .lowin * {
 	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-	
+	box-sizing: border-box;
+
 }
 
 .lowin .lowin-box {
 	width: 100%;
 	position: absolute;
 	left: 0;
-	
+
 }
 
 .lowin .lowin-box-inner {
 	background-color: #fff;
 	-webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, .18);
-	        box-shadow: 0 7px 25px rgba(0, 0, 0, .18);
+	box-shadow: 0 7px 25px rgba(0, 0, 0, .18);
 	padding: 60px 25px 25px 25px;
 	text-align: left;
 	border-radius: 3px;
@@ -111,10 +114,10 @@
 .lowin .lowin-box::after {
 	content: ' ';
 	-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, .1);
-	        box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 25px rgba(0, 0, 0, .1);
 	-webkit-transform: translate(0, -92.6%) scale(.88);
-	    -ms-transform: translate(0, -92.6%) scale(.88);
-	        transform: translate(0, -92.6%) scale(.88);
+	-ms-transform: translate(0, -92.6%) scale(.88);
+	transform: translate(0, -92.6%) scale(.88);
 	border-radius: 3px;
 	position: absolute;
 	top: 100%;
@@ -127,7 +130,7 @@
 
 .lowin .lowin-box.lowin-flip {
 	-webkit-transform: rotate3d(0, 1, 0, -180deg);
-	        transform: rotate3d(0, 1, 0, -180deg);
+	transform: rotate3d(0, 1, 0, -180deg);
 	display: none;
 	opacity: 0;
 }
@@ -165,11 +168,12 @@
 	outline: 0;
 	overflow: hidden;
 }
+
 select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
 }
 
 .lowin .lowin-box .lowin-btn {
@@ -181,7 +185,7 @@ select {
 	border-radius: 3px;
 	background-color: var(--color-primary);
 	-webkit-box-shadow: 0 2px 7px var(--color-semidark);
-	        box-shadow: 0 2px 7px var(--color-semidark);
+	box-shadow: 0 2px 7px var(--color-semidark);
 	font-weight: 700;
 	outline: 0;
 	cursor: pointer;
@@ -193,7 +197,7 @@ select {
 
 .lowin .lowin-box .lowin-btn:active {
 	-webkit-box-shadow: none;
-	        box-shadow: none;
+	box-shadow: none;
 }
 
 .lowin .lowin-box .lowin-btn:hover {
@@ -227,57 +231,57 @@ select {
 /* animation */
 .lowin .lowin-box.lowin-animated {
 	-webkit-animation-name: LowinAnimated;
-	        animation-name: LowinAnimated;
+	animation-name: LowinAnimated;
 	-webkit-animation-duration: 1s;
-	        animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 
 .lowin .lowin-box.lowin-animatedback {
 	-webkit-animation-name: LowinAnimatedBack;
-	        animation-name: LowinAnimatedBack;
+	animation-name: LowinAnimatedBack;
 	-webkit-animation-duration: 1s;
-	        animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 
 .lowin .lowin-box.lowin-animated-flip {
 	-webkit-animation-name: LowinAnimatedFlip;
-	        animation-name: LowinAnimatedFlip;
+	animation-name: LowinAnimatedFlip;
 	-webkit-animation-duration: 1s;
-	        animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 
 .lowin .lowin-box.lowin-animated-flipback {
 	-webkit-animation-name: LowinAnimatedFlipBack;
-	        animation-name: LowinAnimatedFlipBack;
+	animation-name: LowinAnimatedFlipBack;
 	-webkit-animation-duration: 1s;
-	        animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 
 .lowin .lowin-brand.lowin-animated {
 	-webkit-animation-name: LowinBrandAnimated;
-	        animation-name: LowinBrandAnimated;
+	animation-name: LowinBrandAnimated;
 	-webkit-animation-duration: 1s;
-	        animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 }
 
 .lowin .lowin-group.password-group {
@@ -288,28 +292,28 @@ select {
 
 .lowin .lowin-group.password-group.lowin-animated {
 	-webkit-animation-name: LowinPasswordAnimated;
-	        animation-name: LowinPasswordAnimated;
+	animation-name: LowinPasswordAnimated;
 	-webkit-animation-duration: 1s;
-	        animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
-	        transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
 }
 
 .lowin .lowin-group.password-group.lowin-animated-back {
 	-webkit-animation-name: LowinPasswordAnimatedBack;
-	        animation-name: LowinPasswordAnimatedBack;
+	animation-name: LowinPasswordAnimatedBack;
 	-webkit-animation-duration: 1s;
-	        animation-duration: 1s;
+	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
-	        animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	-webkit-animation-timing-function: ease-in-out;
-	        animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
 	-webkit-transform-origin: 0 0;
-	    -ms-transform-origin: 0 0;
-	        transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
 }

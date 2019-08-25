@@ -1,15 +1,15 @@
 document.querySelector('.inputname').addEventListener('keypress', function (e) {
-    var key = e.which || e.keyCode;
-    if (key === 13) { // 13 is enter
+  var key = e.which || e.keyCode;
+  if (key === 13) { // 13 is enter
 
-      var inputname = document.getElementById('inputname').value;
-      var significa = document.getElementById('name');
+    var inputname = document.getElementById('inputname').value;
+    var significa = document.getElementById('name');
 
-      var i = inputname.toLowerCase();
-      significa.textContent = getName(i);
+    var i = inputname.toLowerCase();
+    significa.textContent = getName(i);
 
-      significa.style.visibility = 'visible';
-    }
+    significa.style.visibility = 'visible';
+  }
 });
 var res = str.toLowerCase();
 
@@ -19,19 +19,19 @@ function getName(inputname) {
 
   switch (inputname) {
     case 'saad':
-      answer =  'Happiness, Prosperity, Success, Good Luck. ';
+      answer = 'Happiness, Prosperity, Success, Good Luck. ';
       break;
     case 'areej':
-      answer =  'Pleasant Smell, Fragrance';
+      answer = 'Pleasant Smell, Fragrance';
       break;
     case 'babar':
-      answer =  'Lion, king of jungle';
+      answer = 'Lion, king of jungle';
       break;
     case 'wajahat':
-      answer =  'Esteemed personality';
+      answer = 'Esteemed personality';
       break;
     case 'abdullah':
-      answer =  'Servant of Almighty Allah';
+      answer = 'Servant of Almighty Allah';
       break;
     case 'aimen':
       answer = 'righteous, blessed, lucky ';
@@ -70,7 +70,7 @@ function getName(inputname) {
       answer = 'Worthy of praise';
       break;
     case 'maha':
-      answer =  'Greatness, moon, wild cow';
+      answer = 'Greatness, moon, wild cow';
       break;
     case 'mahnoor':
       answer = 'Moon light';
@@ -97,7 +97,7 @@ function getName(inputname) {
       answer = 'Morning Dew';
       break;
     case 'ukasha':
-      answer ='Protector';
+      answer = 'Protector';
       break;
     case 'umer':
       answer = 'Life';
@@ -245,7 +245,7 @@ function getName(inputname) {
       break;
     case 'zareen':
       answer = 'Full of expression, smile';
-      break;                                                                                                      
+      break;
     case 'armaan':
       answer = 'Wish, longing';
       break;
