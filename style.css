@@ -16,7 +16,9 @@
 	outline: 0;
 	overflow: hidden;
 	margin-top: 40px;
-
+	font-size: 17px;
+	font-weight: 550;
+	font-family: 'Segoe UI';
 }
 .name{
 	margin-top: 80px;
@@ -44,6 +46,7 @@
 	height: 100%;
 	width: 360px;
 	margin: 0 auto;
+	margin-top: -40px;
 }
 
 .lowin.lowin-red {
@@ -84,13 +87,15 @@
 
 .lowin * {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+			box-sizing: border-box;
+	
 }
 
 .lowin .lowin-box {
 	width: 100%;
 	position: absolute;
 	left: 0;
+	
 }
 
 .lowin .lowin-box-inner {
