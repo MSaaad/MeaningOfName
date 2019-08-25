@@ -75,10 +75,10 @@
 }
 
 .lowin.lowin-blue {
-	--color-primary: rgb(0, 102, 161);
-	--color-grey: rgba(0, 102, 198, .05);
-	--color-dark: rgba(0, 152, 198, .7);
-	--color-semidark: rgba(1, 102, 156, 0.45);
+	--color-primary: #008b8b;
+	--color-grey: #027575;
+	--color-dark: #004e4e;
+	--color-semidark: #005a5a;
 }
 
 .lowin a {
