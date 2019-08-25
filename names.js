@@ -46,7 +46,7 @@ function getName(inputname) {
       answer = 'Successful, beneficence, ruler';
       break;
     case 'faraz':
-      asnwer:'Ascent, height, exalted';
+      answer = 'Ascent, height, exalted';
       break;
     case 'hamza':
       answer = 'strong, steadfast';
@@ -97,7 +97,7 @@ function getName(inputname) {
       answer = 'Morning Dew';
       break;
     case 'ukasha':
-      asnwer ='Protector';
+      answer ='Protector';
       break;
     case 'umer':
       answer = 'Life';
@@ -261,7 +261,7 @@ function getName(inputname) {
     case 'hareem':
       answer = 'Walls of House of Kaaba';
       break;
-    case 'Sabiha':
+    case 'sabiha':
       answer = 'Reciprocal of beautiful';
       break;
 
