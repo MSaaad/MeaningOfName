@@ -1,7 +1,7 @@
 .header{
 	color: var(--color-semidark);
 	font-weight: 700;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 	text-align: center;
 
 
@@ -15,7 +15,11 @@
 	width: 100%;
 	outline: 0;
 	overflow: hidden;
+	margin-top: 40px;
 
+}
+.name{
+	margin-top: 80px;
 }
 .lowin {
 	/* variables */
@@ -42,6 +46,13 @@
 	margin: 0 auto;
 }
 
+.lowin.lowin-red {
+	--color-primary: rgb(255, 85, 85);
+	--color-grey: rgba(255, 100, 100, .06);
+	--color-dark: rgba(255, 100, 100, .8);
+	--color-semidark: rgba(255, 100, 100, .55);
+}
+
 .lowin.lowin-green {
 	--color-primary: #D0EF84;
 	--color-grey: rgba(208, 239, 132, .15);
@@ -54,6 +65,13 @@
 	--color-grey: rgba(108, 86, 123, .08);
 	--color-dark: rgba(108, 86, 123, .7);
 	--color-semidark: rgba(108, 86, 123, .45);
+}
+
+.lowin.lowin-blue {
+	--color-primary: #0081C6;
+	--color-grey: rgba(0, 129, 198, .05);
+	--color-dark: rgba(0, 129, 198, .7);
+	--color-semidark: rgba(0, 129, 198, .45);
 }
 
 .lowin a {
