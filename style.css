@@ -27,7 +27,7 @@
 	margin-top: 80px;
 }
 
-.lowin {
+.box {
 	/* variables */
 	--color-primary: #D0EF84;
 	--color-grey: rgba(68, 160, 179, .06);
@@ -40,7 +40,7 @@
 	font-size: 14px;
 }
 
-.lowin .lowin-wrapper {
+.box .box-wrapper {
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
@@ -53,35 +53,14 @@
 	margin-top: -30px;
 }
 
-.lowin.lowin-red {
-	--color-primary: rgb(255, 85, 85);
-	--color-grey: rgba(255, 100, 100, .06);
-	--color-dark: rgba(255, 100, 100, .8);
-	--color-semidark: rgba(255, 100, 100, .55);
-}
-
-.lowin.lowin-green {
-	--color-primary: rgb(239, 237, 132);
-	--color-grey: rgba(239, 239, 132, .15);
-	--color-dark: rgb(185, 184, 97);
-	--color-semidark: rgba(239, 239, 132, .6);
-}
-
-.lowin.lowin-purple {
-	--color-primary: #6C567B;
-	--color-grey: rgba(108, 86, 123, .08);
-	--color-dark: rgba(108, 86, 123, .7);
-	--color-semidark: rgba(108, 86, 123, .45);
-}
-
-.lowin.lowin-blue {
+.box.box-blue {
 	--color-primary: #0086ad;
 	--color-grey: rgba(151, 235, 219, .15);
 	--color-dark: rgba(0, 134, 173, .7);
 	--color-semidark: #00c2c7;
 }
 
-.lowin a {
+.box a {
 	color: var(--color-primary);
 	text-decoration: none;
 	border-bottom: 1px dashed var(--color-semidark);
@@ -89,20 +68,20 @@
 	padding-bottom: 2px;
 }
 
-.lowin * {
+.box * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 
 }
 
-.lowin .lowin-box {
+.box .box-box {
 	width: 100%;
 	position: absolute;
 	left: 0;
 
 }
 
-.lowin .lowin-box-inner {
+.box .box-box-inner {
 	background-color: #fff;
 	-webkit-box-shadow: 0 7px 25px rgba(0, 0, 0, .18);
 	box-shadow: 0 7px 25px rgba(0, 0, 0, .18);
@@ -111,7 +90,7 @@
 	border-radius: 3px;
 }
 
-.lowin .lowin-box::after {
+.box .box-box::after {
 	content: ' ';
 	-webkit-box-shadow: 0 0 25px rgba(0, 0, 0, .1);
 	box-shadow: 0 0 25px rgba(0, 0, 0, .1);
@@ -128,25 +107,25 @@
 	z-index: -1;
 }
 
-.lowin .lowin-box.lowin-flip {
+.box .box-box.box-flip {
 	-webkit-transform: rotate3d(0, 1, 0, -180deg);
 	transform: rotate3d(0, 1, 0, -180deg);
 	display: none;
 	opacity: 0;
 }
 
-.lowin .lowin-box p {
+.box .box-box p {
 	color: var(--color-semidark);
 	font-weight: 700;
 	margin-bottom: 20px;
 	text-align: center;
 }
 
-.lowin .lowin-box .lowin-group {
+.box .box-box .box-group {
 	margin-bottom: 30px;
 }
 
-.lowin .lowin-box label {
+.box .box-box label {
 	margin-bottom: 5px;
 	display: inline-block;
 	width: 100%;
@@ -154,11 +133,11 @@
 	font-weight: 700;
 }
 
-.lowin .lowin-box label a {
+.box .box-box label a {
 	float: right;
 }
 
-.lowin .lowin-box .lowin-input {
+.box .box-box .box-input {
 	background-color: var(--color-grey);
 	color: var(--color-dark);
 	border: none;
@@ -176,7 +155,7 @@ select {
 	text-overflow: '';
 }
 
-.lowin .lowin-box .lowin-btn {
+.box .box-box .box-btn {
 	display: inline-block;
 	width: 100%;
 	border: none;
@@ -195,16 +174,16 @@ select {
 	text-align: center;
 }
 
-.lowin .lowin-box .lowin-btn:active {
+.box .box-box .box-btn:active {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 
-.lowin .lowin-box .lowin-btn:hover {
+.box .box-box .box-btn:hover {
 	opacity: .9;
 }
 
-.lowin .text-foot {
+.box .text-foot {
 	text-align: center;
 	padding: 10px;
 	font-weight: 700;
@@ -212,7 +191,7 @@ select {
 	color: var(--color-semidark);
 }
 
-.lowin .lowin-footer {
+.box .box-footer {
 	text-align: center;
 	margin: 30px 0;
 	font-size: 12px;
@@ -220,7 +199,7 @@ select {
 	font-weight: 700;
 }
 
-.lowin .login-back-link {
+.box .login-back-link {
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
@@ -229,9 +208,9 @@ select {
 }
 
 /* animation */
-.lowin .lowin-box.lowin-animated {
-	-webkit-animation-name: LowinAnimated;
-	animation-name: LowinAnimated;
+.box .box-box.box-animated {
+	-webkit-animation-name: boxAnimated;
+	animation-name: boxAnimated;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
@@ -240,9 +219,9 @@ select {
 	animation-timing-function: ease-in-out;
 }
 
-.lowin .lowin-box.lowin-animatedback {
-	-webkit-animation-name: LowinAnimatedBack;
-	animation-name: LowinAnimatedBack;
+.box .box-box.box-animatedback {
+	-webkit-animation-name: boxAnimatedBack;
+	animation-name: boxAnimatedBack;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
@@ -251,9 +230,9 @@ select {
 	animation-timing-function: ease-in-out;
 }
 
-.lowin .lowin-box.lowin-animated-flip {
-	-webkit-animation-name: LowinAnimatedFlip;
-	animation-name: LowinAnimatedFlip;
+.box .box-box.box-animated-flip {
+	-webkit-animation-name: boxAnimatedFlip;
+	animation-name: boxAnimatedFlip;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
@@ -262,9 +241,9 @@ select {
 	animation-timing-function: ease-in-out;
 }
 
-.lowin .lowin-box.lowin-animated-flipback {
-	-webkit-animation-name: LowinAnimatedFlipBack;
-	animation-name: LowinAnimatedFlipBack;
+.box .box-box.box-animated-flipback {
+	-webkit-animation-name: boxAnimatedFlipBack;
+	animation-name: boxAnimatedFlipBack;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
@@ -273,9 +252,9 @@ select {
 	animation-timing-function: ease-in-out;
 }
 
-.lowin .lowin-brand.lowin-animated {
-	-webkit-animation-name: LowinBrandAnimated;
-	animation-name: LowinBrandAnimated;
+.box .box-brand.box-animated {
+	-webkit-animation-name: boxBrandAnimated;
+	animation-name: boxBrandAnimated;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
@@ -284,15 +263,15 @@ select {
 	animation-timing-function: ease-in-out;
 }
 
-.lowin .lowin-group.password-group {
+.box .box-group.password-group {
 	-webkit-transition: all 1s;
 	-o-transition: all 1s;
 	transition: all 1s;
 }
 
-.lowin .lowin-group.password-group.lowin-animated {
-	-webkit-animation-name: LowinPasswordAnimated;
-	animation-name: LowinPasswordAnimated;
+.box .box-group.password-group.box-animated {
+	-webkit-animation-name: boxPasswordAnimated;
+	animation-name: boxPasswordAnimated;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
@@ -304,9 +283,9 @@ select {
 	transform-origin: 0 0;
 }
 
-.lowin .lowin-group.password-group.lowin-animated-back {
-	-webkit-animation-name: LowinPasswordAnimatedBack;
-	animation-name: LowinPasswordAnimatedBack;
+.box .box-group.password-group.box-animated-back {
+	-webkit-animation-name: boxPasswordAnimatedBack;
+	animation-name: boxPasswordAnimatedBack;
 	-webkit-animation-duration: 1s;
 	animation-duration: 1s;
 	-webkit-animation-fill-mode: forwards;
