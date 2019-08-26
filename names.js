@@ -22,7 +22,9 @@ function getName(inputname) {
       answer = 'Happiness, Prosperity, Success, Good Luck. ';
       break;
     case 'areej':
-      answer = 'Pleasant Smell, Fragrance';
+      answer = 'Mamma papa se poocho apny :")';
+
+      // answer = 'Pleasant Smell, Fragrance';
       break;
     case 'babar':
       answer = 'Lion, king of jungle';
