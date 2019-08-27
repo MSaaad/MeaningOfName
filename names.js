@@ -22,15 +22,19 @@ function getName(inputname) {
       answer = 'Happiness, Prosperity, Success, Good Luck. ';
       break;
     case 'areej':
-      answer = 'Mamma papa se poocho';
-
-      // answer = 'Pleasant Smell, Fragrance';
+      answer = 'Pleasant Smell, Fragrance';
       break;
     case 'babar':
       answer = 'Lion, king of jungle';
       break;
+    case 'uzair':
+      answer = 'The Biblical Ezra';
+      break;
     case 'wajahat':
       answer = 'Esteemed personality';
+      break;
+    case 'areeb':
+      answer = 'Wise, Intelligent';
       break;
     case 'abdullah':
       answer = 'Servant of Almighty Allah';
